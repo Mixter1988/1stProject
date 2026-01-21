@@ -1,0 +1,220 @@
+.button{
+    border:none;
+    color: rgb (12.0.17);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color:seashell;
+    color:rgb(12,0,17);
+    box-shadow:0 8px 16px 0 rgba (0,0,0,6);
+}
+
+.button1 {background-color: rgb(244,242,245)}/*Home*/
+.button2 {background-color: rgb(244,242,245);}/*Menu*/
+.button3 {background-color: rgb(244,242,245);}/*Pastries*/
+.button4 {background-color: rgb(244,242,245);}/*Locations*/
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+.tablink {
+  background-color:seashell;
+  color: black;
+  float: left;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  border-style: dotted;
+  border-color: pink;
+  margin-bottom: 40px;
+  
+}
+.tablink:hover {
+  background-color:pink;
+}
+
+.tabcontent {
+  color: black;
+  display:none;
+  padding-block-end: 100%;
+  height:100%;
+}
+#Home {
+    background-color:seashell;
+    width:auto;
+    padding:100px;
+    margin:20px;
+}
+#Menu {
+    background-color:seashell;
+    width: auto;
+    padding-block-end: 5%;
+    margin: 20px;
+}
+    
+#Pastries {
+    background-color:seashell;
+    width:auto;
+    padding-block-end: 5%;
+    margin: 20px;
+}
+#Locations {
+    background-color:seashell;
+    width:auto;
+    padding-block-end: 10%;
+    margin: 20px;
+}
+
+p{
+    font-size: 25px;
+}
+p2{
+    font-size: 25px;
+}
+.tabcontent {
+  background-color: lightgrey;
+  width: fit-content;
+  border: 15px pink;
+  padding-block-end: 100%;
+  margin: 20px;
+}
+
+.containerhome {
+  position-area: inherit;
+  display:flexbox;
+  justify-content:center; /* Centers the items within the container */
+  gap: 100px; /* Adds space between the items */
+  border: 10px solid pink; /* Optional: adds a box around the entire group */
+  padding: 100px; /* Optional: adds some inner spacing */
+  margin-block-start: auto;
+}
+
+.Card-container {
+  display: flex; /* Activates flexbox for the container */
+  flex-wrap: wrap; /* Allows cards to wrap onto multiple lines */
+  justify-content: space-around; /* Distributes space between and around cards */
+  gap: 40px; /* Adds space between cards (modern alternative to margins) */
+  padding: 20px;
+  box-shadow: 100px;
+}
+
+.card {
+  flex: 1 1 300px; /* Allows cards to grow/shrink, with a base width of 300px */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures image corners are also rounded */
+  display: flex; /* Makes the card itself a flex container */
+  flex-direction: column; /* Stacks image and content vertically */
+  height: 100%; /* Ensures all cards have equal height if container is aligned with stretch (default) or by setting a specific height/alignment on the container's cross-axis */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistent image size */
+  object-fit:contain; /* Ensures image covers the area without distortion, cropping as needed */
+  display: block;
+  margin-top: 10px;
+}
+
+.card .content {
+  padding: 15px;
+  display: flex; /* Makes content a flex container */
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to fill available vertical space within the card */
+}
+
+.card h1 {
+  text-align: center;
+  margin-top: 0;
+  font-style: italic;
+}
+
+.card p {
+  text-align: center;
+  font-style: italic;
+}
+
+.LCard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to flow onto multiple lines */
+  gap: 20px; /* Provides space between cards (row-gap and column-gap) */
+  justify-content: center; /* Centers the cards within the container */
+  padding: 20px;
+}
+
+.LCard {
+  /* This flex shorthand allows cards to grow/shrink, with a minimum width basis */
+  flex: 1 1 250px; /* Grow: 1, Shrink: 1, Basis: 250px (min width before wrapping) */
+  display: flex;
+  flex-direction: column; /* Stacks image on top of content within each card */
+  border: 1px solid pink;
+  border-radius: 16px;
+  overflow:scroll; /* Ensures image and content stay within rounded corners */
+  box-shadow: 0 20px 22px rgba(152, 83, 137, 0.1);
+  max-width: 300px; /* Optional: Sets a maximum width for consistency on large screens */
+}
+
+.LCard img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistent image size */
+  object-fit: cover; /* Ensures images cover the area while maintaining aspect ratio */
+}
+
+.LCard-content {
+  padding: 15px;
+  /* Use flex-grow: 1 to push content to the bottom of cards with variable content */
+  /* If you want all card footers aligned at the bottom: */
+  display: flex;
+  flex-direction:column;
+  flex-grow: 1; 
+}
+
+.paragrahtext{
+  text-align: center;
+}
+
+footer {
+  text-align: center; /* Centers the text inside the footer */
+  padding: 20px; /* Adds space inside the footer */
+  background-color: pink; /* Sets a dark background color */
+  color:black; /* Sets the text color to white */
+  width: 100%; /* Ensures the footer spans the full width */
+  
+}
+
+a {
+  color:black;
+}
+
+body {
+    background-image: url("/Images/floral-blossoms-full.avif");
+
+    background-size: cover;
+
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat;
+
+    /* Center the image within the screen */
+    background-position: center;
+
+    /* Optional: Fix the background so it doesn't scroll with the content */
+    background-attachment: fixed;
+
+    /* Optional: Ensure the body spans the full height of the viewport */
+    min-height: 100vh;
+    margin: 10px; /* Remove default body margin */
+}
