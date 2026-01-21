@@ -201,7 +201,7 @@ a {
 }
 
 body {
-    background-image: url("/Images/floral-blossoms-full.avif");
+    background-image: url("Images/floral-blossoms-full.avif");
 
     background-size: cover;
 
